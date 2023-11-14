@@ -3,7 +3,7 @@
 ### <code style="color : green">**Installation with docker**</code>
 
 
-1. ###### <code style="color : orange"> **Clone the project**
+1. ###### <code style="color : orange"> **Clone the project** </code>
 
   ` git clone https://github.com/aliesmaeel/SimpleBlog.git`
 
