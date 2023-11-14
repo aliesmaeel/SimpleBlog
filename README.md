@@ -1,13 +1,14 @@
+### **Installation with docker**
 
-Installation with docker
+1. ###### **Clone the project**
 
-1. Clone the project
   ` git clone https://github.com/aliesmaeel/SimpleBlog.git`
 
-2. Run 
+###### 2. Run 
+
 `composer install`
 
-3. Navigate into project folder using terminal and run
+###### 3. Navigate into project folder using terminal and run
 
 `docker run --rm \
 -u "$(id -u):$(id -g)" \
@@ -16,11 +17,11 @@ Installation with docker
 laravelsail/php82-composer:latest \
 composer install --ignore-platform-reqs`
 
-4. Copy .env.example into .env
+###### 4. Copy .env.example into .env
 
    `cp .env.example .env`
 
-5. Start the project in detached mode
+###### 5. Start the project in detached mode
 
   ` ./vendor/bin/sail up -d`
 
@@ -29,13 +30,13 @@ composer install --ignore-platform-reqs`
 
 `./vendor/bin/sail bash`
 
-6. Set encryption key
+###### 6. Set encryption key
 
 `   php artisan key:generate --ansi`
 
-7. Run migrations
+###### 7. Run migrations
 
   ` php artisan migrate`
-8. Add Filament Admin user
+  ###### 8. Add Filament Admin user
 
   ` php artisan make:filament-user`
